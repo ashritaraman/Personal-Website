@@ -1,9 +1,12 @@
 body {
-  font-family: Raleway;
-}
+  font-family: 'Raleway', sans-serif;}
 
 /*------HOME PAGE----------*/
 
+.topnav {
+overflow: hidden;
+  
+}
 .header {
   padding: 40px;
   margin: 40px;
@@ -11,45 +14,99 @@ body {
   color: black;
 }
 
+.pages {
+  padding: 50px;
+  margin: 50px;
+  font-size: 20px;
+}
+
 a:link {
-  color: black;
+  color: #3ad4c7;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: black;
+  color: #3ad4c7;
 }
 
 /* mouse over link */
 a:hover {
-  color: #3ad4c7;
+  color:black;
 }
 
 /* selected link */
 a:active {
-  color: #3ad4c7;
+  color: black;
 }
 
-.pages {
-  float: right;
-  font-size: 20px;
+.linkspacing {
+  margin-right: 30px;
 }
 
 .intro {
-  margin-top: 40px;
+  padding: 40px;
+  margin: 40px;
+  margin-top: -80px;
   font-size: 25px;
 }
 
-hr {
-  margin-top: 50px;
+.homepageline {
+  margin: 80px;
+  margin-top: -40px;
+
+}
+
+/*------ABOUT----------*/
+.about {
+  font-size: 20px;
+}
+
+.bio {
+  overflow: hidden;
+}
+
+.blurb {
+  display: block;
+  width: 30%;
+  margin-right: 200px;
+  margin-top: -20px;
+}
+
+.aboutimg {
+  margin-left: 200px;
+  width: 400px;
+  margin-top: 80px;
+  border-radius: 1%;
+}
+
+.linkstyling {
+  color: #3ad4c7;
+
+}
+
+.textheader {
+  text-align: center;
+  font-size: 50px;
 }
 
 /*------FOOTER----------*/
 footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+i {
+  margin-right: 15px;
+}
+
+a.footerlinks {
+  color: black;
+}
+
+a.footerlinks:hover {
+  color: #3ad4c7;
 }
