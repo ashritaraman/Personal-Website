@@ -19,6 +19,18 @@ overflow: hidden;
   display: none;
 } */
 
+p {
+  font-family: 'Arapey', serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Arapey', serif;
+}
+
+a {
+  font-family: 'Arapey', serif;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -26,6 +38,11 @@ overflow: hidden;
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  height: 70px;
+  align-items: center;
   padding: 30px;
   margin: 30px;
 }
@@ -39,11 +56,14 @@ overflow: hidden;
 .logo {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 45px;
+  letter-spacing: 2px;
 }
 
 .main-nav li {
   text-align: center;
   margin: 15px auto;
+  margin-left: 150px;
 }
 
 .logo {
@@ -51,14 +71,15 @@ overflow: hidden;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
-  font-size: 40px;
+  font-size: 45px;
+  letter-spacing: 2px;
 
 }
 
 .navbar-toggle {
   position: absolute;
-  top: 78px;
-  right: 20px;
+  top: 60px;
+  right: 10px;
   cursor: pointer;
   color: #3ad4c7;
   font-size: 24px;
@@ -68,7 +89,7 @@ overflow: hidden;
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .navbar {
       display: flex;
       justify-content: space-between;
@@ -108,20 +129,6 @@ overflow: hidden;
 
 
 
-
-.header {
-  /* padding: 40px;
-  margin: 40px; */
-  font-size: 50px;
-  color: black;
-}
-
-.pages {
-  padding: 60px;
-  margin: 60px;
-  font-size: 20px;
-}
-
 a:link {
   color: #3ad4c7;
   text-decoration: none;
@@ -144,6 +151,7 @@ a:active {
 
 .linkspacing {
   margin-right: 30px;
+  font-size: 18px;
 }
 
 .intro {
@@ -154,11 +162,10 @@ a:active {
 }
 
 .welcome {
-  font-weight: bold;
   padding: 40px;
   margin: 40px;
   margin-top: -30px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .homepageline {
@@ -226,17 +233,17 @@ video {
 
 .bio {
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .blurb {
   display: block;
   width: 30%;
   margin-right: 200px;
-  /* margin-top: -20px; */
+  margin-top: 30px;
 }
 
 .aboutimg {
-  margin-left: 200px;
   width: 400px;
   margin-top: 80px;
   border-radius: 1%;
@@ -244,7 +251,6 @@ video {
 
 .linkstyling {
   color: #3ad4c7;
-
 }
 
 .textheader {

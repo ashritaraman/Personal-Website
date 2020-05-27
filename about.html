@@ -1,12 +1,13 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="styling.css">
   <link rel="shortcut icon" href="favicon_io/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/19b83bcd00.js" crossorigin="anonymous"></script>
+
+
 
 
   <title>Ashrita Raman</title>
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-  <div class="topnav">
+  <!-- <div class="topnav">
     <div style="float: left" class="header">
       <a href="index.html"> ASHRITA RAMAN </a>
 
@@ -24,9 +25,28 @@
           ABOUT
         </a> <a href="raman_ashrita_resume.pdf" class="linkspacing" target="_blank">RESUME </a> </p>
     </div>
-  </div>
+  </div> -->
 
-  <div class="bio">
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <a href="index.html" class="logo">ASHRITA RAMAN </a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="index.html" class="linkspacing"> PROJECTS </a>
+      </li>
+      <li>
+        <a href="about.html" class="linkspacing"> ABOUT </a>
+      </li>
+      <li>
+        <a href="raman_ashrita_resume.pdf" class="linkspacing" target="_blank"> RESUME </a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+  <!-- <div class="bio">
     <div style="float: left">
       <img src="aboutimg.jpg" class="aboutimg">
 
@@ -34,6 +54,7 @@
     <div style="float: right" class="blurb">
       <h2> ASHRITA RAMAN </h2>
       <h3> आश्रिता रामन्</h3>
+      <br>
       <p class="aboutblurb">hello! My name is Ashrita and I'm currently a junior at Cornell University majoring in
         computer science and
         minoring
@@ -60,6 +81,44 @@
   </div>
   <br>
   <br>
+  <br> -->
+
+  <div class="container bio">
+    <div class="row">
+      <div class="col-sm">
+        <img src="aboutimg.jpg" class="aboutimg">
+      </div>
+      <div class="col-sm">
+        <h2> ASHRITA RAMAN </h2>
+        <h3> आश्रिता रामन्</h3>
+        <br>
+        <p class="aboutblurb">hello! My name is Ashrita and I'm currently a junior at Cornell University majoring in
+          computer science and
+          minoring
+          in
+          music and linguistics. </p>
+        <p class="aboutblurb">my main interests lie in the fields of natural language processing, mobile development,
+          web development, and music technology. I am passionate about the intersection between computer science and the
+          arts and using technology to solve real-world problems. </p>
+        <p class="aboutblurb">at Cornell, I am a member of <a href="https://cornelldti.org" class="linkstyling"
+            target="_blank">Cornell
+            Design
+            and Tech
+            Initiative</a> (Cornell DTI), a project team that creates technology for community impact. on DTI, I am an
+          iOS
+          developer
+          for <a href="https://www.cornelldti.org/projects/events" class="linkstyling" target="_blank">eve</a>, an app
+          that
+          allows students to track events across campus and share them with others. </p>
+        <p class="aboutblurb"> when I'm not coding, you can find me playing violin with the <a
+            href="https://www.cuorchestra.org/" class="linkstyling" target="_blank">Cornell Symphony Orchestra</a>,
+          practicing piano in a small practice room,
+          eating and taking pictures of good food, and running along the "gorges" trails of Ithaca.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
   <br>
 
   <!-- <div>
@@ -67,18 +126,26 @@
     <p> I love food, and I love capturing some of the yu </p>
   </div> -->
 
+  <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+
+    navBarToggle.addEventListener('click', function () {
+      mainNav.classList.toggle('active');
+    });
+  </script>
+
 
   <footer>
     <p>Created with 💕 by Ashrita Raman | Copyright © 2020 </p>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/ashritaraman" target="_blank" class="footerlinks"><i
-          class="fab fa-linkedin-in fa-lg"></i></a>
-      <a href="https://www.github.com/ashritaraman" target="_blank" class="footerlinks"><i
-          class="fab fa-github fa-lg"></i></a>
-      <a href="mailto: ar699@cornell.edu" target="_blank" class="footerlinks"><i class="fas fa-envelope fa-lg"></i></a>
-    </div>
+    <a href="https://www.linkedin.com/in/ashritaraman" target="_blank" class="footerlinks"><i
+        class="fab fa-linkedin-in fa-lg"></i></a>
+    <a href="https://www.github.com/ashritaraman" target="_blank" class="footerlinks"><i
+        class="fab fa-github fa-lg"></i></a>
+    <a href="mailto: ar699@cornell.edu" target="_blank" class="footerlinks"><i class="fas fa-envelope fa-lg"></i></a>
 
   </footer>
+  <br>
 </body>
 
 
