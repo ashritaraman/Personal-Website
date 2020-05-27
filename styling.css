@@ -64,6 +64,7 @@ a {
   text-align: center;
   margin: 15px auto;
   margin-left: 150px;
+  letter-spacing: 2px;
 }
 
 .logo {
@@ -72,13 +73,13 @@ a {
   margin-top: 10px;
   margin-left: 20px;
   font-size: 45px;
-  letter-spacing: 2px;
+  margin-top: 0;
 
 }
 
 .navbar-toggle {
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 10px;
   cursor: pointer;
   color: #3ad4c7;
@@ -86,7 +87,7 @@ a {
 }
 
 .active {
-  display: block;
+  display: inline;
 }
 
 @media screen and (min-width: 850px) {
@@ -107,6 +108,7 @@ a {
 
   .main-nav li {
       margin: 0;
+      letter-spacing: 1px;
   }
 
   .nav-links {
@@ -151,21 +153,21 @@ a:active {
 
 .linkspacing {
   margin-right: 30px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .intro {
   padding: 40px;
   margin: 40px;
-  margin-top: -80px;
+  margin-top: -90px;
   font-size: 25px;
 }
 
 .welcome {
   padding: 40px;
   margin: 40px;
-  margin-top: -30px;
-  font-size: 30px;
+  margin-top: -20px;
+  font-size: 35px;
 }
 
 .homepageline {
@@ -183,6 +185,7 @@ a:active {
 
 .projecttitle {
   font-size: 30px;
+  margin-top: 8px;
 }
 
 .projectbutton {
@@ -198,6 +201,7 @@ a:active {
   border-radius: 12px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 8px;
   border-color: #3ad4c7;
   margin-right: 10px;
 }
@@ -220,10 +224,14 @@ a:active {
 }
 
 video {
-  margin-left: 125px;
-  width: 575px;
+  /* margin-left: 125px; */
+  width: 400px;
   height: 300px;
   /* margin-top: 40px; */
+}
+
+.projectrow {
+  margin-bottom: 40px;
 }
 
 /*------ABOUT----------*/
