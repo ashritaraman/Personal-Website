@@ -182,29 +182,31 @@
       </div>
     </div>
 
-    <script>
-      let mainNav = document.getElementById('js-menu');
-      let navBarToggle = document.getElementById('js-navbar-toggle');
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 
-      navBarToggle.addEventListener('click', function () {
-        mainNav.classList.toggle('active');
-      });
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
 
-
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $('#scroll').fadeIn();
-          } else {
-            $('#scroll').fadeOut();
-          }
+        navBarToggle.addEventListener('click', function () {
+          mainNav.classList.toggle('active');
         });
-        $('#scroll').click(function () {
-          $("html, body").animate({ scrollTop: 0 }, 600);
-          return false;
+
+
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $('#scroll').fadeIn();
+            } else {
+              $('#scroll').fadeOut();
+            }
+          });
+          $('#scroll').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+          });
         });
-      });
-    </script>
+      </script>
 
     <div class="backtotopdiv">
       <a href="#" id="scroll">Back to top ⬆️</a>
